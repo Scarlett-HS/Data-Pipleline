@@ -1,0 +1,18 @@
+root@ubuntu-vm-01:/usr/local/kafka_2.13-3.7.1# bin/zookeeper-server-start.sh config/zookeeper.properties
+
+root@ubuntu-vm-01:/usr/local# grep zookeeper kafka_2.13-3.7.1/config/server.properties 
+# Zookeeper connection string (see zookeeper docs for details).
+zookeeper.connect=localhost:2181
+# Timeout in ms for connecting to zookeeper
+zookeeper.connection.timeout.ms=18000
+
+root@ubuntu-vm-01:/usr/local/kafka_2.13-3.7.1# bin/kafka-server-start.sh config/server.properties
+
+root@ubuntu-vm-01:/usr/local/kafka_2.13-3.7.1# bin/kafka-topics.sh --create --topic learn --bootstrap-server localhost:9092
+Created topic learn.
+
+root@ubuntu-vm-01:/usr/local/kafka_2.13-3.7.1# bin/kafka-topics.sh --create --topic TSLA --bootstrap-server localhost:9092
+Created topic TSLA.
+
+root@ubuntu-vm-01:/usr/local/kafka_2.13-3.7.1# bin/kafka-topics.sh --create --topic INTC --bootstrap-server localhost:9092
+Created topic INTC.
