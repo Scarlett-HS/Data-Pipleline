@@ -123,7 +123,7 @@ def main():
         print("Usage: python producer_v3.py <TICKER1> [<TICKER2> ...]")
         sys.exit(1)
 
-    api_token = 'ybb69ec73112065aaef6d0bdddffc917f317cbe1b'  # Replace with your Tiingo API token
+    api_token = 'bb69ec73112065aaef6d0bdddffc917f317cbe1b'  # Replace with your Tiingo API token
     tickers = sys.argv[1:]
     kafka_server = '10.0.0.152:9092'
     
