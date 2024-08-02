@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# Alpha Vantage API key: 46RXGXIFZMI7QJZX
 import sys
 import time
 import json
